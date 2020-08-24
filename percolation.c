@@ -18,7 +18,7 @@
  */
 const char *symbols[3] = {AIR " " RESET, GROUND " " RESET, WATER " " RESET};
 
-bool animate = true;
+bool animate = false;
 
 /**
  * Génère une matrice aléatoire
@@ -117,5 +117,5 @@ int main(int argc, char *argv[]) {
   bool does_percolate = percolate(m, length);
   display(m, length);
 
-  printf("La matrice %s !\n", does_percolate ? "percole" : "ne percole pas");
+  printf("\nLa matrice %s !\n", does_percolate ? "percole" : "ne percole pas");
 }
